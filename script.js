@@ -11,9 +11,6 @@ function success(pos) {
   $.ajax({url: url, dataType: 'jsonp',success: function(result){
            // Background
           var icon = result.weather[0].icon;
-          console.log(icon);
-          console.log('url("' + "../img/rainyDay.jpg" + '")');
-          
           if(icon === "01d" || icon==="02d"){
             $('body').css('background-image', 'url("' + "../img/sunnyDay.jpg" + '")');
           }else if(icon === "03d" || icon === "04d" ){
@@ -40,15 +37,15 @@ function success(pos) {
             $('body').css('background-image', 'url("' + "../img/foggyNight.jpg" + '")');
           }
           // Location Name
-          $(".location").append("<p>"+result.name+"</p>");
+          $(".location").append("<p class='name'>"+result.name+"</p>");
           // Icon & Description
-          $(".icon").append("<img src='http://openweathermap.org/img/w/01d.png'>");
+          $(".icon").append("<img src='http://openweathermap.org/img/w/"+icon+".png'>");
           $(".description").append(result.weather[0].description.toUpperCase());
           // Temp
           var kelvinTemp = result.main.temp;
           var fahrenheit = Math.floor(kelvinTemp * (9/5) - 459.67);
           var celsius = Math.floor(kelvinTemp - 273.15);
-          $(".temp").append("<p>"+fahrenheit+ "	&#8457" + "</p>");
+          $(".temp").append("<p>"+fahrenheit+ " &#8457" + "</p>");
           // Humidity
           var humidity = result.main.humidity + "%";
           $(".humidity").append("<p>"+humidity+"</p>");
@@ -62,5 +59,5 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 
       
     
-	
+  
  
