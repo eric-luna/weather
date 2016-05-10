@@ -1,113 +1,149 @@
-html,body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans',Optima;
-}
-body{
-	background-image: url(../img/sunnyDay.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 1000px;
-}
-.heading{
-	background-color: rgba(255, 255, 255,0.5);
-	width: 90%;
-	text-align: center;
-	margin: auto;
-	font-size: 1.5em;
-	font-weight: 800;
-	border-radius: 10px;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Optima;
 }
 
-.location{
-	text-align: center;
-	margin: 5% auto;
-	font-size: 1.8em;
-	font-weight: 600;
-	background-color: rgba(255, 255, 255,0.5);
-	width: 80%;
-	border-radius: 10px;
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+  background-color: #c2c2d6;
 }
-.location p{
-	margin: 0 auto;
+/*main header of page*/
+.heading {
+  background-color: rgba(255, 255, 255, 0.90);
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: 800;
+  border-radius: 10px;
 }
-.name{
-	font-weight: 400;
+/*location div style */
+.location {
+  text-align: center;
+  margin: 5% auto;
+  font-size: 1.8em;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.90);
+  width: 80%;
+  border-radius: 10px;
 }
-.forecast, .temp-section, .humidity-section{
-	margin: 5% auto;
-	text-align: center;
-	font-weight: 400;
-	background-color: rgba(255, 255, 255,0.5);
-	height: 200px;
-	width: 70%;
-	border-radius: 10px;
+/*location div text*/
+.location p {
+  margin: 0 auto;
 }
-.icon img{
-	height: 100px;
-	width: 100px;
-	margin: auto;
+/*styles for the three weather info divs*/
+.forecast,
+.temp-section,
+.humidity-section {
+  margin: 2% auto;
+  text-align: center;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, .90);
+  height: 200px;
+  width: 70%;
+  border-radius: 10px;
 }
-.tag{
-	font-size: 1.5em;
-	margin-bottom: 0;
+/*style for the icon images in the forecast div*/
+.icon img {
+  height: 125px;
+  width: 125px;
+  margin: auto;
 }
-.temp,.humidity{
-	margin: 0 auto;
-	margin-top: 8%;
-	font-size: 3em;
+/*tag for each weather section */
+.tag {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.temp,
+.humidity {
+  margin: 0 auto;
+  margin-top: 10%;
+  font-size: 3.5em;
+}
+.temp{
+	font-size: 1.85em;
 }
 footer {
-	clear: both;
-	margin: auto;
-	margin-top: 5%;
-	text-align: center;
-	color: white;
+  clear: both;
+  margin: auto;
+  margin-top: 3%;
+  text-align: center;
+  color: white;
 }
-footer a:link{
-	text-decoration: none;
-	color: blue;
-	font-size: 1.5em;
-	font-weight: bolder;
+
+footer a:link {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bolder;
 }
-footer a:visited{
-	color: blue;
-	text-decoration: none;
-	font-weight: bolder;
+
+footer a:visited {
+  color: blue;
+  text-decoration: none;
+  font-weight: bolder;
 }
+
+
 /********************** Responsive Design ****************************/
-@media only screen and (min-width: 400px){
-	.forecast, .temp-section, .humidity-section{
-		width: 50%;
-	}
+
+@media only screen and (min-width: 400px) {
+  .heading {
+    width: 65%;
+  }
+  .location {
+    width: 55%;
+  }
+  .forecast,
+  .temp-section,
+  .humidity-section {
+    width: 60%;
+  }
 }
-@media only screen and (min-width: 780px){
-	body{
-		height: 700px;
-	}
-	.heading h1{
-		margin-top: 2%;
-		font-size: 2.5em
-	}
-	.location{
-		margin:2.5% auto;
-	}
-   .weather{ 
-   	  width:100%; 
-   	  white-space:nowrap; 
-   	  height: 250px;
-   }
-   .forecast, .temp-section, .humidity-section{
-   	  float:left;
-   	  display:inline-block; 
-   	  width:33.3%;
-   	  height: 100%;
-   	  margin:4% auto;
-   	  border-radius: 0;
-   }
-   .temp,.humidity{
-	margin: 0 auto;
-	margin-top: 10%;
-}
+
+@media only screen and (min-width: 780px) {
+  body {
+    height: 700px;
+  }
+  .heading {
+    width: 57%;
+  }
+  .heading h1 {
+    margin-top: 2%;
+    font-size: 2.5em
+  }
+  .location {
+    margin: 2.5% auto;
+    width: 35%;
+  }
+  .weather {
+    width: 100%;
+    white-space: nowrap;
+    height: 250px;
+  }
+  .forecast,
+  .temp-section,
+  .humidity-section {
+    float: left;
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    margin: 4% auto;
+    border-radius: 0;
+  }
+  .temp{
+  	font-size:1.85em;
+  }
+  .temp,
+  .humidity {
+    margin: 0 auto;
+    margin-top: 10%;
+  }
 }
