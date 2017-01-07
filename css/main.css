@@ -1,149 +1,82 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', Optima;
+ margin: 0;
+ padding: 0;
 }
 
 body {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 1000px;
-  background-color: #c2c2d6;
-}
-/*main header of page*/
-.heading {
-  background-color: rgba(255, 255, 255, 0.90);
-  width: 90%;
-  text-align: center;
-  margin: auto;
-  font-size: 1.5em;
-  font-weight: 800;
-  border-radius: 10px;
-}
-/*location div style */
-.location {
-  text-align: center;
-  margin: 5% auto;
-  font-size: 1.8em;
-  font-weight: bolder;
-  background-color: rgba(255, 255, 255, 0.90);
-  width: 80%;
-  border-radius: 10px;
-}
-/*location div text*/
-.location p {
-  margin: 0 auto;
-}
-/*styles for the three weather info divs*/
-.forecast,
-.temp-section,
-.humidity-section {
-  margin: 2% auto;
-  text-align: center;
-  font-weight: 400;
-  background-color: rgba(255, 255, 255, .90);
-  height: 200px;
-  width: 70%;
-  border-radius: 10px;
-}
-/*style for the icon images in the forecast div*/
-.icon img {
-  height: 125px;
-  width: 125px;
-  margin: auto;
-}
-/*tag for each weather section */
-.tag {
-  font-size: 1.5em;
-  margin-bottom: 0;
-  font-weight: bolder;
+ color: #211f1e ;
+ background: url(/img/bg.jpg) no-repeat center center fixed; 
+ background-size: cover;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
-.temp,
-.humidity {
-  margin: 0 auto;
-  margin-top: 10%;
-  font-size: 3.5em;
-}
-.temp{
-	font-size: 1.85em;
-}
-footer {
-  clear: both;
-  margin: auto;
-  margin-top: 3%;
-  text-align: center;
-  color: white;
+.container {
+ position: relative;
+ top: 100px;
 }
 
-footer a:link {
-  text-decoration: none;
-  color: blue;
-  font-size: 1.5em;
-  font-weight: bolder;
+h1 {
+ font-family: "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 80px;
+ font-weight: normal;
+ margin: 0;
+ text-align: right;
 }
 
-footer a:visited {
-  color: blue;
-  text-decoration: none;
-  font-weight: bolder;
+h2 {
+ border-top: 1px solid #211f1e ;
+ font-size: 24px;
+ font-weight: bold;
+ margin: 10px 0 40px 0;
+ padding: 30px 0 0 0;
+ text-align: right;
 }
 
-
-/********************** Responsive Design ****************************/
-
-@media only screen and (min-width: 400px) {
-  .heading {
-    width: 65%;
-  }
-  .location {
-    width: 55%;
-  }
-  .forecast,
-  .temp-section,
-  .humidity-section {
-    width: 60%;
-  }
+.day > div {
+    font-weight: bold;
+ line-height: 48px;
 }
 
-@media only screen and (min-width: 780px) {
-  body {
-    height: 700px;
-  }
-  .heading {
-    width: 57%;
-  }
-  .heading h1 {
-    margin-top: 2%;
-    font-size: 2.5em
-  }
-  .location {
-    margin: 2.5% auto;
-    width: 35%;
-  }
-  .weather {
-    width: 100%;
-    white-space: nowrap;
-    height: 250px;
-  }
-  .forecast,
-  .temp-section,
-  .humidity-section {
-    float: left;
-    display: inline-block;
-    width: 33.3%;
-    height: 100%;
-    margin: 4% auto;
-    border-radius: 0;
-  }
-  .temp{
-  	font-size:1.85em;
-  }
-  .temp,
-  .humidity {
-    margin: 0 auto;
-    margin-top: 10%;
-  }
+.weekday span {
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.weekday p {
+ display: inline-block;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.weather img {
+ width: 48px;
+}
+
+.high p,
+.low p,
+.hourly .temp {
+ font-size: 16px;
+}
+
+.hourly {
+ text-align: center;
+ display: none;
+}
+
+.hourly .hour {
+ font-weight: bold;
+ font-size: 16px;
+}
+
+.hourly img {
+ width: 24px;
+}
+
+.hourly p {
+ margin: 16px 0;
+}
+
+.last {
+ margin-bottom: 100px;
 }
