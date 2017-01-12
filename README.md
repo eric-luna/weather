@@ -1,5 +1,6 @@
 # Weather Checker
 
+### Powered By:
 [![N|Solid](https://icons.wxug.com/logos/PNG/wundergroundLogo_4c_horz.png)](https://www.themoviedb.org/?language=en)
 
 Built using Angular.js, Weather Checker lets users find current weather and future forecasts for most cities in the United States. 
@@ -10,7 +11,7 @@ Features:
 
 ### Tech
 
-Cinema Seeker/TV was bult using:
+Weather Checker was bult using:
 
 * Angular.js
 * Node.js
