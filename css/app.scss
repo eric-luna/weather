@@ -1,0 +1,139 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background:#F1A30B;
+    font-family: 'Unica One', cursive;
+    color: black;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+h1{
+	margin:auto;
+	text-align:center;
+}
+h3{
+	margin:0;
+}
+.search {
+    background:#F1A30B;
+    height: 70px;
+    margin:auto;
+    input,
+    select,
+    button {
+        height: 20px;
+        padding: 0;
+    }
+    input {
+        width: 75%;
+    }
+    select {
+        width: 23%;
+        margin-top: 5px;
+    }
+    button {
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}
+
+.current-div {
+    h2,
+    h3 {
+        margin: 0;
+    }
+    .current {
+        list-style: none;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;   
+        .temp-info {
+            list-style: none;
+            text-align: left;
+            font-size: 1.5em;
+            width: 50%;
+            padding: 0;
+        }
+        .weather {
+            list-style: none;
+            width: 50%;
+            text-align: right;
+            padding: 0;
+        }
+    }
+}
+
+.forecast-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .forecast {
+        list-style: none;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        border-bottom: 2px solid black;
+        .temp-info {
+            list-style: none;
+            text-align: left;
+            font-size: 1.5em;
+            width: 50%;
+            padding: 0;
+            margin: 0;
+        }
+        .weather {
+            list-style: none;
+            width: 50%;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+footer{
+	.copyright {
+        margin: 20px auto;
+        padding: 0;
+        text-align: center;
+        font-size:0.9em;
+        span {
+            background:#fff;
+            border-radius:5px;
+            padding:5px;
+            color: #000;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+	.search{
+		width: 45%;
+		margin:auto;
+	}
+    .current-div{
+    	margin:auto;
+    	width: 60%;
+    }
+
+    .forecast{
+    	padding-right:12px;
+    	border-right: 2px solid black;
+    }
+}

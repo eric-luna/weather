@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #F1A30B;
+  font-family: 'Unica One', cursive;
+  color: black; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+h1 {
+  margin: auto;
+  text-align: center; }
+
+h3 {
+  margin: 0; }
+
+.search {
+  background: #F1A30B;
+  height: 70px;
+  margin: auto; }
+  .search input,
+  .search select,
+  .search button {
+    height: 20px;
+    padding: 0; }
+  .search input {
+    width: 75%; }
+  .search select {
+    width: 23%;
+    margin-top: 5px; }
+  .search button {
+    margin: 0 auto;
+    margin-top: 5px; }
+
+.current-div h2,
+.current-div h3 {
+  margin: 0; }
+.current-div .current {
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row; }
+  .current-div .current .temp-info {
+    list-style: none;
+    text-align: left;
+    font-size: 1.5em;
+    width: 50%;
+    padding: 0; }
+  .current-div .current .weather {
+    list-style: none;
+    width: 50%;
+    text-align: right;
+    padding: 0; }
+
+.forecast-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .forecast-div .forecast {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    border-bottom: 2px solid black; }
+    .forecast-div .forecast .temp-info {
+      list-style: none;
+      text-align: left;
+      font-size: 1.5em;
+      width: 50%;
+      padding: 0;
+      margin: 0; }
+    .forecast-div .forecast .weather {
+      list-style: none;
+      width: 50%;
+      text-align: right;
+      padding: 0;
+      margin: 0; }
+
+footer .copyright {
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+  font-size: 0.9em; }
+  footer .copyright span {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold; }
+
+@media only screen and (min-width: 850px) {
+  .search {
+    width: 45%;
+    margin: auto; }
+
+  .current-div {
+    margin: auto;
+    width: 60%; }
+
+  .forecast {
+    padding-right: 12px;
+    border-right: 2px solid black; } }
+
+/*# sourceMappingURL=app.css.map */
