@@ -2,7 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background:#F1A30B;
+    // background: #F1A30B;
+    background: #FFDD00;
     font-family: 'Unica One', cursive;
     color: black;
 }
@@ -19,37 +20,53 @@ body {
     display: none;
 }
 
-h1{
-	margin:auto;
-	text-align:center;
+h1 {
+    margin: auto;
+    text-align: center;
 }
-h3{
-	margin:0;
+
+h3 {
+    margin: 0;
 }
+
+.forecast-header {
+    padding: 0 10px;
+}
+
 .search {
-    background:#F1A30B;
+    background: #FFDD00;
     height: 70px;
-    margin:auto;
+    margin: auto;
+    width: 90%;
     input,
     select,
     button {
-        height: 20px;
         padding: 0;
+        border-radius: 5px;
     }
     input {
         width: 75%;
+        border: none;
     }
     select {
         width: 23%;
-        margin-top: 5px;
+        border: none;
     }
     button {
         margin: 0 auto;
         margin-top: 5px;
+        padding: 2px 10px;
+        background: white;
+        border: 1px solid #000;
+        &:focus {
+            outline: none;
+        }
     }
 }
 
 .current-div {
+    margin: 20px auto;
+    padding: 0 10px;
     h2,
     h3 {
         margin: 0;
@@ -57,21 +74,23 @@ h3{
     .current {
         list-style: none;
         width: 90%;
-        margin: auto;
+        margin: 10px auto;
         display: flex;
-        flex-direction: row;   
+        flex-direction: row;
         .temp-info {
             list-style: none;
             text-align: left;
             font-size: 1.5em;
             width: 50%;
             padding: 0;
+            margin: 0;
         }
         .weather {
             list-style: none;
             width: 50%;
             text-align: right;
             padding: 0;
+            margin: 0;
         }
     }
 }
@@ -80,6 +99,8 @@ h3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 0 10px;
     .forecast {
         list-style: none;
         margin: 10px auto;
@@ -105,35 +126,44 @@ h3{
     }
 }
 
-footer{
-	.copyright {
+footer {
+    text-align: center;
+    .copyright {
         margin: 20px auto;
         padding: 0;
         text-align: center;
-        font-size:0.9em;
-        span {
-            background:#fff;
-            border-radius:5px;
-            padding:5px;
+        font-size: 0.9em;
+        a {
+            background: #fff;
+            border-radius: 5px;
+            padding: 5px;
             color: #000;
             font-size: 1.5em;
             font-weight: bold;
+            text-decoration: none;
         }
+    }
+    .wu{
+        margin:10px auto;
+        width: 100px;
     }
 }
 
 @media only screen and (min-width: 850px) {
-	.search{
-		width: 45%;
-		margin:auto;
-	}
-    .current-div{
-    	margin:auto;
-    	width: 60%;
+    .search {
+        width: 45%;
+        margin: auto;
+    }
+    .current-div {
+        margin: auto;
+        width: 50%;
+    }
+    .forecast {
+        padding-right: 12px;
+        border-right: 2px solid black;
     }
 
-    .forecast{
-    	padding-right:12px;
-    	border-right: 2px solid black;
+    .wu{
+        width: 30%;
     }
 }
