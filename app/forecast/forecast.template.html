@@ -3,7 +3,7 @@
 	 	<div class="col-md-2">
 			<!-- Sidebar Content -->
 			<div class="search">
-				<input ng-model="city" placeholder="Enter a City" / >
+				<input ng-model="city" placeholder="  Enter a City" / >
 				<select ng-model="state">
 					<option value="">State</option>
 					<option value="AL">AL</option>
@@ -77,7 +77,7 @@
    				</ul>
 			</div>
 		</div>
-		<h3 ng-class="$ctrl.visibility">5 Day Forecast:</h3>
+		<h3 ng-class="$ctrl.visibility" class="forecast-header">5 Day Forecast:</h3>
 		<div class="forecast-div" ng-class="$ctrl.visibility">
 			<div class="forecast" ng-repeat="day in $ctrl.forecast | limitTo:5">
 				<ul class="temp-info">
