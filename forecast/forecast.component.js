@@ -1,9 +1,8 @@
-// Register the `phoneList` component on the `phoneList` module,
 angular.
   module('forecast').
   component('forecast', {
     templateUrl:'forecast/forecast.template.html',
-    controller: function PhoneListController($http) {
+    controller: function forecastController($http) {
 	    var self = this;
 	    self.visibility = "hidden"
 
