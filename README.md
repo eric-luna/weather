@@ -20,3 +20,6 @@ Weather Checker was bult using:
 * CSS
 * Responsive Design
 
+$ git push origin --delete gh-pages
+$ git branch -d gh-pages
+

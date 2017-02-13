@@ -1,0 +1,13 @@
+{
+  "use": [
+    "autoprefixer",
+    "cssnano"
+  ],
+  "input": "app/css/src.css",
+  "output": "app/css/main.css",
+  "local-plugins": true,
+  "watch": true,
+  "autoprefixer": {
+    "browsers": "> 1%, last 5 versions"
+  }
+}
