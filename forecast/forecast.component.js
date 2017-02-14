@@ -10,7 +10,7 @@ angular.
 	        if (state !== "" && city !== undefined && city!=="") {
 	        	$http({
 				    method: 'GET',
-				    url: 'http://api.wunderground.com/api/d09806e16c9d36eb/conditions/q/' + state + '/' + city + '.json'
+				    url: 'https://api.wunderground.com/api/d09806e16c9d36eb/conditions/q/' + state + '/' + city + '.json'
 				}).then(function successCallback(response) {
 				    self.error = response.data.response.error;
 				    self.current = response.data.current_observation;
@@ -20,7 +20,7 @@ angular.
 	                	
 	                	console.log(self.current);
 
-	                	$http.get('http://api.wunderground.com/api/d09806e16c9d36eb/forecast10day/q/' + state + '/' + city + '.json').then(function(response) {
+	                	$http.get('https://api.wunderground.com/api/d09806e16c9d36eb/forecast10day/q/' + state + '/' + city + '.json').then(function(response) {
 	                    	self.forecast = response.data.forecast.simpleforecast.forecastday;
 	               		});
 
